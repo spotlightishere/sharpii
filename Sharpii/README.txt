@@ -57,63 +57,13 @@ help with.
   If you have the output format set only to WAD, and your your output location
   has '.wad' at the end, or you have not specified one, then instead of being
   saved inside a folder, just the wad file will be saved.
-	
- WAD Editing:
-/------------------>
-  When changing the type of WAD (using the -type argument) some of the types
-  may not work, as they have not all been tested. Here is a list of what the
-  different types are:
-            - Channel: Regular channel WAD, nothing special
-            - DLC: WAD for game DLC (downloaded game content)
-            - GameChannel: Channels such as the Wii Fit or Mario Kart channels
-            - HiddenChannels: A hidden channel, it wont show up on the Wii Menu
-            - SystemChannels: Channels such as the Mii or Shopping channels
-            - SystemTitles: Stuff like the System Menu and boot2 (but not IOSs)
-
-  For more details see http://wiibrew.org/wiki/Title_database
-
- SendDol:
-/------------------>
-  When using Sharpii's SendDol function, please note that any arguments placed
-  after the '-dol file' argument will be sent as dol arguments.
-
-  Also note that for compression to actually work, 'zlib1.dll' must be placed in
-  the same directory as Sharpii. This file is not included, but it can easily be
-  found online. If you are sending a zip file instead of a dol, it wont be 
-  compressed at all, no matter what.
-
-  If you do not wish to enter an IP every time you use SendDol, then you can add
-  the argument '-saveip' to the command. This will save the entered IP to the
-  environmental variable 'SharpiiIP', and then, in the future, if you do not enter 
-  an ip, Sharpii will use the one saved there instead. (Also applies to SendWad)
-
- SendWad:
-/------------------>
-  Since version 1.6, Sharpii has supported AHBPROT for installing WADs. This means
-  that as long as you have HBC 1.0.7 or above, you will be able to install the WAD
-  without a patched IOS. To use this feature, enter '-ahb' instead of '-ios IOS'
-
-  If you do not wish to enter an IP every time you use SendDol, then you can add
-  the argument '-saveip' to the command. This will save the entered IP to the
-  environmental variable 'SharpiiIP', and then, in the future, if you do not enter 
-  an ip, Sharpii will use the one saved there instead. (Also applies to SendDol)
-
-
-/----Installing Sharpii
-/------------------------------>
-
-Since version 1.7, you have been able to install Sharpii. This allows you to run
-Sharpii from anywhere without needing the exe in that directory. To install Sharpii,
-just use the command 'Sharpii install'. This will copy Sharpii to your My Programs
-directory, and create an environmental variable. To remove it, just use the command
-'Sharpii uninstall' which will remove the environmental variable, then delete Sharpii
-from My Programs.
-
 
 /----SOURCE
 /------------------------------>
 
-The source for Sharpii is available at: https://github.com/mogzol/sharpii
+The original source for Sharpii is available at: https://github.com/mogzol/sharpii
+spotlightishere's version is https://github.com/spotlightishere/sharpii and was edited
+just for https://github.com/RiiConnect24/IOS-Patcher to work on a Mac + be stripped down.
 
 
 /----CREDITS
